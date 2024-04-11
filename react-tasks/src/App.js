@@ -4,6 +4,7 @@ import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
 import Task5 from './pages/Task5/Task5';
+import Task6 from './pages/Task6/Task6';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path = '/task3' element = {<Task3/>}></Route>
         <Route path = '/task4' element = {<Task4/>}></Route>
         <Route path = '/task5' element = {<Task5/>}></Route>
+        <Route path = '/task6' element = {<Task6/>}></Route>
       </Routes>
     </div>
   );
