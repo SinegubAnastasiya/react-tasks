@@ -6,8 +6,12 @@ function Task29() {
         surname: ''
     })
 
-    function showName () {
+    function setInputValue (e) {
+        setForm({...form, [e.target.name]: e.target.value})
+    }
 
+    function check () {
+        console.log(form);
     }
 
     return <div>
@@ -17,9 +21,9 @@ state, первоначальное значение которого name: ‘�
 значения 2 input на пустоту. Структура state:
         </p>
 
-        <input></input>
-        <input></input>
-        {/* <button onClick={}>Click</button> */}
+        <input name = 'name' onChange={setInputValue} />
+        <input name = 'surname' onChange={setInputValue}/>
+        <button onClick={check}>Click</button>
         
     </div>
 }
