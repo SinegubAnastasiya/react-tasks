@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home'
 import Task4 from './pages/Task4/Task4';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
@@ -26,11 +27,20 @@ import Task26 from './pages/Task26/Task26';
 import Task27 from './pages/Task27/Task27';
 import Task28 from './pages/Task28/Task28';
 import Task29 from './pages/Task29/Task29';
+import Task30 from './pages/Task30/Task30';
+import Task31 from './pages/Task31/Task31';
+import Task32 from './pages/Task32/Task32';
+import Task33 from './pages/Task33/Task33';
+import Task34 from './pages/Task34/Task34';
+import Task35 from './pages/Task35/Task35';
+import Task36 from './pages/Task36/Task36';
+
 
 function App() {
   return (
     <div>
       <Routes>
+        <Route path = '/' element = {<Home />}></Route>
         <Route path = '/task1' element = {<Task1/>}></Route>
         <Route path = '/task2' element = {<Task2/>}></Route>
         <Route path = '/task3' element = {<Task3/>}></Route>
@@ -58,6 +68,13 @@ function App() {
         <Route path = '/task27' element = {<Task27/>}></Route>
         <Route path = '/task28' element = {<Task28/>}></Route>
         <Route path = '/task29' element = {<Task29/>}></Route>
+        <Route path = '/task30' element = {<Task30/>}></Route>
+        <Route path = '/task31' element = {<Task31/>}></Route>
+        <Route path = '/task32' element = {<Task32/>}></Route>
+        <Route path = '/task33' element = {<Task33/>}></Route>
+        <Route path = '/task34' element = {<Task34/>}></Route>
+        <Route path = '/task35' element = {<Task35/>}></Route>
+        <Route path = '/task36' element = {<Task36/>}></Route>
       </Routes>
     </div>
   );
