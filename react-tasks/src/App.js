@@ -48,6 +48,8 @@ import Task47 from './pages/Task47/Task47';
 import Task48 from './pages/Task48/Task48';
 import Task49 from './pages/Task49/Task49';
 import Task50 from './pages/Task50/Task50';
+import Task51 from './pages/Task51/Task51';
+import Task52 from './pages/Task52/Task52';
 
 
 function App() {
@@ -103,6 +105,8 @@ function App() {
         <Route path = '/task48' element = {<Task48/>}></Route>
         <Route path = '/task49' element = {<Task49/>}></Route>
         <Route path = '/task50' element = {<Task50/>}></Route>
+        <Route path = '/task51' element = {<Task51/>}></Route>
+        <Route path = '/task52' element = {<Task52/>}></Route>
       </Routes>
     </div>
   );
