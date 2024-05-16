@@ -63,10 +63,12 @@ import Task62 from './pages/Task62/Task62';
 import Task63 from './pages/Task63/Task63';
 import Task64 from './pages/Task64/Task64';
 import Task65 from './pages/Task65/Task65';
-// import Task66 from './pages/Task66/Task66';
-// import Task67 from './pages/Task67/Task67';
-// import Task68 from './pages/Task68/Task68';
-// import Task69 from './pages/Task69/Task69';
+import Task66 from './pages/Task66/Task66';
+import Task67 from './pages/Task67/Task67';
+import Task68 from './pages/Task68/Task68';
+import Task69 from './pages/Task69/Task69';
+import Task70 from './pages/Task70/Task70';
+import Task71 from './pages/Task71/Task71';
 
 
 function App() {
@@ -137,10 +139,12 @@ function App() {
         <Route path = '/task63' element = {<Task63/>}></Route>
         <Route path = '/task64' element = {<Task64/>}></Route>
         <Route path = '/task65' element = {<Task65/>}></Route>
-        {/* <Route path = '/task66' element = {<Task66/>}></Route>
+        <Route path = '/task66' element = {<Task66/>}></Route>
         <Route path = '/task67' element = {<Task67/>}></Route>
         <Route path = '/task68' element = {<Task68/>}></Route>
-        <Route path = '/task69' element = {<Task69/>}></Route> */}
+        <Route path = '/task69' element = {<Task69/>}></Route>
+        <Route path = '/task70' element = {<Task70/>}></Route>
+        <Route path = '/task71' element = {<Task71/>}></Route>
       </Routes>
     </div>
   );
