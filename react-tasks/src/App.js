@@ -75,8 +75,11 @@ import Task74 from './pages/Task74/Task74';
 import Task75 from './pages/Task75/Task75';
 import Task76 from './pages/Task76/Task76';
 import Task77 from './pages/Task77/Task77';
+import Task78 from './pages/Task78/Task78';
+import Task79 from './pages/Task79/Task79';
+import Task80 from './pages/Task80/Task80';
 
-import { Task77Context } from './Context/index'
+import { Task77Context, Task78Context, Task79Context } from './Context/index'
 
 
 function App() {
@@ -160,11 +163,17 @@ function App() {
         <Route path='/task76' element={<Task76 />}></Route>
       </Routes>
 
-      <Task77Context.Provider value={{name: 'User Name', surname: 'User Surname', age: 18, email: 'user@email.com'}}>
+      <Task77Context.Provider value={{ name: 'User Name', surname: 'User Surname', age: 18, email: 'user@email.com' }}>
         <Routes>
           <Route path='/task77' element={<Task77 />}></Route>
         </Routes>
       </Task77Context.Provider>
+
+      <Task79Context.Provider value={{ temperature: 23, humidity: '50%', windSpeed: '9m/s' }}>
+        <Routes>
+          <Route path='/task79' element={<Task79 />}></Route>
+        </Routes>
+      </Task79Context.Provider>
     </div>
   );
 }
