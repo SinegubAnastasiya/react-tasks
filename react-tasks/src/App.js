@@ -79,10 +79,27 @@ import Task78 from './pages/Task78/Task78';
 import Task79 from './pages/Task79/Task79';
 import Task80 from './pages/Task80/Task80';
 
-import { Task77Context, Task78Context, Task79Context } from './Context/index'
+import { Task77Context, Task78Context, Task79Context, Task80Context } from './Context/index'
+import { useState } from 'react';
 
 
 function App() {
+  // const obj = {
+  //   ru: 'привет',
+  //   en: 'hello',
+  //   pl: 'czesc'
+  // }
+
+  // const [lang, setLanguage] = useState('Ru');
+
+  // const changeLang = (value) => setLanguage(value)
+
+  // const global = { lang: lang, changeLang: changeLang, obj: obj }
+
+  const [color, setColor] = useState('black');
+  const [background, setBackground] = useState('white');
+  const [flag, setFlag] = useState(false)
+  
   return (
     <div>
       <Routes>
@@ -169,11 +186,23 @@ function App() {
         </Routes>
       </Task77Context.Provider>
 
+        {/* <Task78Context.Provider value={ global }>
+        <Routes>
+          <Route path='/task78' element={<Task78 />}></Route>
+        </Routes>
+      </Task78Context.Provider>   */}
+
       <Task79Context.Provider value={{ temperature: 23, humidity: '50%', windSpeed: '9m/s' }}>
         <Routes>
           <Route path='/task79' element={<Task79 />}></Route>
         </Routes>
       </Task79Context.Provider>
+
+      <Task80Context.Provider value={{ flag: flag, setFlag: setFlag, background: background, setBackground: setBackground, color: color, setColor: setColor }}>
+        <Routes>
+          <Route path='/task80' element={<Task80 />}></Route>
+        </Routes>
+      </Task80Context.Provider>
     </div>
   );
 }
