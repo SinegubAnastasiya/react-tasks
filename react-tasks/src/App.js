@@ -78,6 +78,7 @@ import Task77 from './pages/Task77/Task77';
 import Task78 from './pages/Task78/Task78';
 import Task79 from './pages/Task79/Task79';
 import Task80 from './pages/Task80/Task80';
+import Task81 from './pages/Task81/Task81';
 
 import { Task77Context, Task78Context, Task79Context, Task80Context } from './Context/index'
 import { useState } from 'react';
@@ -178,6 +179,7 @@ function App() {
         <Route path='/task74' element={<Task74 />}></Route>
         <Route path='/task75' element={<Task75 />}></Route>
         <Route path='/task76' element={<Task76 />}></Route>
+        <Route path='/task81' element={<Task81 />}></Route>
       </Routes>
 
       <Task77Context.Provider value={{ name: 'User Name', surname: 'User Surname', age: 18, email: 'user@email.com' }}>
